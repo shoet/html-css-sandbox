@@ -1,0 +1,44 @@
+.pattern1 {
+    border: 5px solid black;
+    padding: 10px;
+    margin: 10px;
+}
+
+.pattern1 thead, th {
+    font-weight: bold;
+}
+
+.pattern1 td {
+    text-align: center;
+    border: 1px solid black;
+}
+
+.pattern2 {
+    border: 5px solid black;
+    padding: 10px;
+    margin: 10px;
+}
+
+.pattern2 thead, th {
+    font-weight: bold;
+}
+
+.pattern2 td {
+    text-align: center;
+    border: 1px solid black;
+}
+
+.pattern3 {
+    border: 5px solid black;
+    padding: 10px;
+    margin: 10px;
+}
+
+.pattern3 thead, th {
+    font-weight: bold;
+}
+
+.pattern3 td {
+    text-align: center;
+    border: 1px solid black;
+}
