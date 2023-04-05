@@ -4,6 +4,10 @@
     margin: 10px;
 }
 
+.pattern1 table {
+    border-collapse: collapse;
+}
+
 .pattern1 thead, th {
     font-weight: bold;
 }
