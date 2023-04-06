@@ -1,0 +1,38 @@
+
+header {
+    height: 100px;
+    background-color: yellowgreen;
+}
+
+.container-body:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.container-main {
+    background-color: aquamarine;
+    width: 980px;
+    float: left;
+}
+.content {
+    background-color: grey;
+}
+.content img {
+    object-fit: fill;
+    height: auto;
+    max-width: 100%;
+}
+
+.container-sub{
+    background-color: green;
+    width: 200px;
+    margin: auto;
+    float: right;
+}
+
+footer {
+    height: 100px;
+    background-color: orange;
+    /* clear: both; */
+}

@@ -1,0 +1,25 @@
+.container {
+    background-color: aquamarine;
+    width: 980px;
+    margin: auto;
+}
+
+header {
+    height: 100px;
+    background-color: yellowgreen;
+}
+
+.content {
+    background-color: grey;
+}
+
+.content img {
+    object-fit: fill;
+    height: auto;
+    max-width: 100%;
+}
+
+footer {
+    height: 100px;
+    background-color: orange;
+}

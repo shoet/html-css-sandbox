@@ -1,0 +1,13 @@
+.container {
+    height: 50px;
+    background-color: powderblue;
+}
+
+p {
+    background-color: orange;
+    font-size: 14px;
+    line-height: 1.429;
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%)
+}

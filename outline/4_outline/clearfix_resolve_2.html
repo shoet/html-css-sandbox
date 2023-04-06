@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        [class^="box"] {
+            line-height: 200px;
+            font-family: Verdata, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 40px;
+
+            border: solid 8px rgb(144, 144, 144);
+            color: rgb(144, 144, 144);
+            background-color: rgb(244, 244, 244);
+        }
+        .box9, .box10 {
+            float: left;
+        }
+        .group1:after {
+            content: "hogehoge";
+            display: block;
+            clear: both;
+        }
+    </style>
+    <body>
+        <div style="border: 5px solid rgb(118, 117, 117); margin-top: 50px"></div>
+        <h1>clearfix resolve</h1>
+        <div style="border: 5px solid rgb(118, 117, 117);"></div>
+        <div style="padding-bottom: 30px"></div>
+
+        <div class="box8">
+            BOX8
+        </div>
+        <div class="group1">
+            <div class="box9">
+                BOX9
+            </div>
+            <div class="box10">
+                BOX10
+            </div>
+        </div>
+        <div class="box11">
+            BOX11
+        </div>
+        <!-- ここに:afterが入ってくる -->
+    </body>
+</html>

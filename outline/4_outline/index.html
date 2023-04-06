@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        [class^="box"] {
+            line-height: 200px;
+            font-family: Verdata, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 40px;
+        }
+        .box1 {
+            border: solid 8px #faa;
+            color: #faa;
+            background-color: #fee;
+        
+            width: 50%;
+            float: left;
+        }
+        .box2 {
+            border: solid 8px rgb(170, 248, 255);
+            color: rgb(170, 248, 255);
+            background-color: rgb(249, 251, 252);
+
+            width: 50%;
+            float: left;
+        }
+        .box3{
+            border: solid 8px rgb(220, 255, 170);
+            color: rgb(220, 255, 170);
+            background-color: rgb(255, 255, 255);
+
+            float: left;
+            width: 50%;
+        }
+        .box4 {
+            border: solid 8px rgb(251, 255, 170);
+            color: rgb(251, 255, 170);
+            background-color: rgb(255, 255, 248);
+
+            float: left;
+            width: 50%;
+        }
+        .box5, .box6, .box7 {
+            border: solid 8px rgb(204, 170, 255);
+            color: rgb(204, 170, 255);
+            background-color: rgb(235, 223, 252);
+        
+            float: left;
+            width: 33.33333%;
+        }
+        .group1:after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+    </style>
+    <body>
+        <div class="group1">
+            <div class="box1">
+                BOX1
+            </div>
+            <div class="box2">
+                BOX2
+            </div>
+        </div>
+        <div class="group1">
+            <div class="box3">
+                BOX3
+            </div>
+            <div class="box4">
+                BOX4
+            </div>
+        </div>
+        <div class="group1">
+            <div class="box5">
+                BOX5
+            </div>
+            <div class="box5">
+                BOX5
+            </div>
+            <div class="box5">
+                BOX5
+            </div>
+        </div>
+        <!-- ここに:afterが入ってくる -->
+    </body>
+</html>
