@@ -1,7 +1,7 @@
 # html-css-sandbox
 
 ## font
-- [index.html](https://pages.shoet.team/font/index.html "index")
+- ![index.html](https://pages.shoet.team/font/index.html "index")
 
 ## table
 - [index.html](https://pages.shoet.team/table/index.html "index")
