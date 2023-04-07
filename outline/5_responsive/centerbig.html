@@ -15,35 +15,55 @@
             font-size: 40px;
             font-weight: bold;
             text-align: center;
-            width: 25%;
 
-            float: left;
         }
-        .boxa1 {
+        .box1 {
             border: 5px solid pink;
             background-color: rgb(247, 234, 237);;
             color: rgb(250, 161, 175);
         }
-        .boxa2 {
+        .box2 {
             border: solid 8px rgb(170, 248, 255);
             color: rgb(170, 248, 255);
             background-color: rgb(249, 251, 252);
         }
-        .boxa3 {
+        .box3 {
             border: solid 8px rgb(220, 255, 170);
             color: rgb(220, 255, 170);
             background-color: rgb(255, 255, 255);
         }
-        .boxa4 {
+        .box4 {
             border: solid 8px rgb(251, 255, 170);
             color: rgb(251, 255, 170);
             background-color: rgb(255, 255, 248);
         }
+
+        @media (min-width: 768px) {
+            .box2, .box3, .box4 {
+                line-height: 500px;
+            }
+            .box2, .box4 {
+                width: 25%;
+                float: left;
+            }
+            .box3 {
+                width: 50%;
+                float: left;
+            }
+
+            .group:after {
+                content: "";
+                display: block;
+                clear: both;
+            }
+        }
     </style>
     <body>
-        <div class="boxa1">BOX1</div>
-        <div class="boxa2">BOX2</div>
-        <div class="boxa3">BOX3</div>
-        <div class="boxa4">BOX4</div>
+        <div class="box1">BOX1</div>
+        <div class="group">
+            <div class="box2">BOX2</div>
+            <div class="box3">BOX3</div>
+            <div class="box4">BOX4</div>
+        </div>
     </body>
 </html>
