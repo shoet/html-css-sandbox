@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        [class^="box"] {
+            text-align: center;
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        .box1 {
+            border: 5px solid yellowgreen;
+            color: yellowgreen;
+            line-height: 200px;
+        }
+
+        .box2 {
+            border: 5px solid pink;
+            color: pink;
+            line-height: 100px;
+            width: 150px;
+            position: absolute;
+            top: 0;
+            left: 30px;
+        }
+
+        .box3 {
+            border: 5px solid rgb(192, 83, 101);
+            color: rgb(192, 83, 101);
+            line-height: 100px;
+            width: 150px;
+            position: absolute;
+            right: 30px;
+            bottom: 50px;
+        }
+
+        .group {
+            border: 5px solid rgb(50, 104, 205);
+            position: relative;
+        }
+    </style>
+    <body>
+        <div class="group">
+            <div class="box1">BOX1</div>
+            <div class="box2">BOX2</div>
+            <div class="box3">BOX3</div>
+        </div>
+    </body>
+</html>
