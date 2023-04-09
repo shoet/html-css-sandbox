@@ -4,18 +4,23 @@ body {
     font-family: sans-serif;
 }
 
-#main span {
-    color: #555;
-    font-size: 14px;
-}
-
-#main div.module.main-module {
+/* レイアウトグループ */
+/* ヘッダーやフッター、コンテンツエリアを形成するスタイル */
+.ly_cont {
     max-width: 1200px;
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
+}
 
+#main span {
+    color: #555;
+    font-size: 14px;
+}
+
+
+#main div.bl_module.main-module {
     display: flex;
     align-items: center;
     font-size: 16px;
