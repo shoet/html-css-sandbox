@@ -21,34 +21,34 @@ body {
     font-size: 14px;
 }
 
-#main div.bl_module.main-module {
+#main .bl_module.main-module {
     display: flex;
     align-items: center;
     font-size: 16px;
     line-height: 1.5;
 }
 
-#main div.bl_module.main-module figure {
+#main .bl_module.main-module figure {
     flex: 1 1 25%;
     margin-right: 3.333333%;
 }
 
-#main div.bl_module.main-module img {
+#main .bl_module.main-module img {
     width: 100%;
     vertical-align: top;
 }
 
-#main div.bl_module.main-module div {
+#main .bl_module.main-module div {
     flex: 1 1 68.333333%;
 }
 
-#main div.bl_module.main-module h2 {
+#main .bl_module.main-module .title {
     margin-bottom: 10px;
     font-size: 18px;
     font-weight: bold;
 }
 
-#main div.bl_module.main-module h3 {
+#main .bl_module.main-module .sub-title {
     margin-top: 10px;
     margin-bottom: 10px;
     font-size: 16px;
