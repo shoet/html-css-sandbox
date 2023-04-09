@@ -14,11 +14,12 @@ body {
     margin-left: auto;
 }
 
+/* モジュールグループ */
+/* モジュールに関わるCSS */
 #main span {
     color: #555;
     font-size: 14px;
 }
-
 
 #main div.bl_module.main-module {
     display: flex;
@@ -27,27 +28,27 @@ body {
     line-height: 1.5;
 }
 
-#main div.module.main-module figure {
+#main div.bl_module.main-module figure {
     flex: 1 1 25%;
     margin-right: 3.333333%;
 }
 
-#main div.module.main-module img {
+#main div.bl_module.main-module img {
     width: 100%;
     vertical-align: top;
 }
 
-#main div.module.main-module div {
+#main div.bl_module.main-module div {
     flex: 1 1 68.333333%;
 }
 
-#main div.module.main-module h2 {
+#main div.bl_module.main-module h2 {
     margin-bottom: 10px;
     font-size: 18px;
     font-weight: bold;
 }
 
-#main div.module.main-module h3 {
+#main div.bl_module.main-module h3 {
     margin-top: 10px;
     margin-bottom: 10px;
     font-size: 16px;
