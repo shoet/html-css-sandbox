@@ -1,0 +1,65 @@
+/* ベースグループ */
+/* サイト全体の下地となるベーススタイル */
+body {
+    font-family: sans-serif;
+}
+
+/* レイアウトグループ */
+/* ヘッダーやフッター、コンテンツエリアを形成するスタイル */
+.ly_cont {
+    max-width: 1200px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* モジュールグループ */
+/* モジュールに関わるCSS */
+.bl_media {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.bl_media_image_wrapper {
+    flex: 1 1 25%;
+    margin-right: 3.333333%;
+}
+
+.bl_media_image_wrapper img {
+    width: 100%;
+    vertical-align: top;
+}
+
+.bl_media_body {
+    flex: 1 1 68.333333%;
+}
+
+.bl_media_title {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.bl_media_body > span {
+    color: #555;
+    font-size: 14px;
+}
+
+.bl_media .sub-title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border-bottom: 1px solid #555;
+}
+
+.bl_media__rev {
+    flex-direction: row-reverse;
+    text-align: right;
+}
+.bl_media_image_wrapper_bordered {
+    padding: 2px;
+    border: 1px solid black;
+}
