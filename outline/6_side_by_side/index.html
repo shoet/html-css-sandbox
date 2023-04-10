@@ -45,6 +45,9 @@
         .box3, .box4 {
             width: 50%;
         }
+        .container__rev {
+            flex-direction: row-reverse;
+        }
     </style>
     <body>
         <h1>float pattern</h1>
@@ -59,6 +62,10 @@
         <h1>display:flex pattern</h1>
         <p>子要素のサイズを引き伸ばして(縮小して)敷き詰める。</p>
         <div class="container-b">
+            <div class="box3 c_pink">BOX1</div>
+            <div class="box4 c_yellow">BOX2</div>
+        </div>
+        <div class="container-b container__rev">
             <div class="box3 c_pink">BOX1</div>
             <div class="box4 c_yellow">BOX2</div>
         </div>
