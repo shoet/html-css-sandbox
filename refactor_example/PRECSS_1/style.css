@@ -54,3 +54,12 @@ body {
     font-size: 16px;
     border-bottom: 1px solid #555;
 }
+
+.bl_media__rev {
+    flex-direction: row-reverse;
+    text-align: right;
+}
+.bl_media_image_wrapper_bordered {
+    padding: 2px;
+    border: 1px solid black;
+}
