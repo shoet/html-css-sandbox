@@ -1,0 +1,43 @@
+/* BEM */
+
+html {
+    font-size: 62.5%;
+}
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+}
+
+
+.cardList {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    padding: 5px;
+    border: 1px solid rgb(214, 214, 214);
+    border-radius: 7px;
+    width: calc((100% - 60px) / 3);
+}
+
+.card + .card { /* cardの次のcardに適用 */
+    margin-top: 0px;
+}
+
+.card__title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.card__text {
+    margin-top: 3px;
+    padding-top: 5px;
+    font-size: 1.1rem;
+}
+
+.card_text--bordered-top {
+    border-top: 2px solid rgb(84, 174, 223);
+}
