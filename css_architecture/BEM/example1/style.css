@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%
+}
+
+a {
+    text-decoration: none;
+    padding: 0px;
+    margin: 0px;
+    border: none;
+}
+
+.header {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 15px;
+}
+.navigation {
+    margin: 10px;
+}
+.navigation_inline {
+    display: flex;
+    justify-content: start;
+}
+.navigation__item {
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: #2fc72f;
+    width: fit-content; /* テキストに横幅を合わせる */
+}
+.navigation__text {
+    font-size: 3rem;
+}
+.container {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 100px;
+}
+.button-list {
+    background-color: grey;
+}
+.button {
+    font-size: 1rem;
+    border: 1px solid transparent;
+    border-radius: 3px;
+}
+.button_theme_normal {
+    background-color: #2fc72f;
+    color: white;
+}
+.button_sm {
+    font-size: 1rem;
+}
+.button_mid {
+    font-size: 3rem;
+}
+.button_big {
+    font-size: 5rem;
+}
+.button_bg_orange {
+    background-color: rgb(238, 155, 0);
+    color: white;
+}

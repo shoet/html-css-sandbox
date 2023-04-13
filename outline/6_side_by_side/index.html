@@ -4,51 +4,9 @@
         <title></title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-        [class^="box"] {
-            line-height: 200px;
-            font-size: 40px;
-            text-align: center;
-        }
-        .c_pink {
-            border: 5px solid pink;
-            color: pink;
-        }
-        .c_yellow {
-            border: 5px solid yellow;
-            color: yellow;
-        }
-        .container-a {
-            width: 600px;
-            border: 1px solid black;
-        }
-
-        .container-a:after {
-            content: "";
-            display: block;
-            clear: both;
-        }
-        .box1, .box2 {
-            float: left
-        }
-
-        .container-b {
-            width: 600px;
-            display: flex;
-            border: 1px solid black;
-        }
-        .box3, .box4 {
-            width: 50%;
-        }
-        .container__rev {
-            flex-direction: row-reverse;
-        }
-    </style>
     <body>
         <h1>float pattern</h1>
         <p>子要素のサイズをそのままに敷き詰めていく。親要素の横幅を超えると2列目に行く</p>
@@ -68,6 +26,12 @@
         <div class="container-b container__rev">
             <div class="box3 c_pink">BOX1</div>
             <div class="box4 c_yellow">BOX2</div>
+        </div>
+
+        <h1>display:flex pattern (flex-grow)</h1>
+        <div class="container-c">
+            <div class="box5 c_pink">BOX5</div>
+            <div class="box6 c_yellow">BOX6</div>
         </div>
     </body>
 </html>

@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+}
+[class^="box"] {
+    line-height: 200px;
+    font-size: 40px;
+    text-align: center;
+}
+.c_pink {
+    border: 5px solid pink;
+    color: pink;
+}
+.c_yellow {
+    border: 5px solid yellow;
+    color: yellow;
+}
+.container-a {
+    width: 600px;
+    border: 1px solid black;
+}
+
+.container-a:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.box1, .box2 {
+    float: left
+}
+
+.container-b {
+    width: 600px;
+    display: flex;
+    border: 1px solid black;
+}
+.box3, .box4 {
+    width: 50%;
+}
+.container__rev {
+    flex-direction: row-reverse;
+}
+
+.container-c {
+    width: 600px;
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid black;
+}
+.box5 {
+    flex-grow: 1;
+}
+.box6 {
+    flex-grow: 2;
+}
