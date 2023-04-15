@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    padding: 100px;
+}
+
+.box-list {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    background-color: gray;
+    align-items: center;
+}
+
+.box-list__item {
+    text-align: center;
+    background-color: orange;
+    /* heightとline-heightが合わないことでボックスとテキストの高さがフィットせずに上側に寄せられる */
+    height: 60px;
+    width: 60px;
+    line-height: 40px;
+    padding: 10px;
+}
