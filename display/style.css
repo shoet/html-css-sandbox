@@ -1,0 +1,27 @@
+
+.container {
+  margin: 20px 5px;
+
+}
+
+.display-inline .text-1,
+.display-inline .text-2 {
+  display: inline;
+  height: 50px;
+  background-color: gray;
+}
+
+.display-block .text-1,
+.display-block .text-2 {
+  display: block;
+  height: 50px;
+  background-color: gray;
+}
+
+/* inline-blockはインラインかつ、高さの指定が可能 */
+.display-inline-block .text-1,
+.display-inline-block .text-2 {
+  display: inline-block;
+  height: 50px;
+  background-color: gray;
+}

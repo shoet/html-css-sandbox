@@ -1,0 +1,90 @@
+.container {
+  width: 500px;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 1px solid black;
+  position: relative;
+  text-align: right;
+}
+
+.button {
+  display: inline-block;
+  width: 300px;
+  max-width: 100%;
+  border: 2px solid transparent;
+  background-color: #e25c00;;
+  color: #fff;
+  padding: 20px 10px;
+  text-align: center;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
+  font-size: 1.125rem;
+  text-decoration: none;;
+  transition: .25s;
+}
+/* .button {
+  display: inline-block; 親要素のalign-itemに従わせる
+  width: 300px; width指定で中身を改行。min-widthで中身に合わせて幅広
+  max-width: 100%; 親要素の幅がwidthを超えたときにはみ出させずに、親要素の幅に合わせる
+  border: 2px solid transparent; focus,hover時のみ適用してしまうと2px分ボタンサイズが変わってしまうため、通常時も2pxをtransparenteで適用
+  background-color: #e25c00;
+  color: #fff;
+  padding: 20px 10px;
+  text-align: center;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
+  font-size: 1.125rem; rem指定ブラウザ側のフォントサイズの可変に対応
+  text-decoration: none;;
+  transition: .25s;
+} */
+
+.button:focus,
+.button:hover {
+  background-color: #fff;;
+  border-color: currentColor;
+  color: #e25c00;
+}
+/* .button:focus, focusはタブ移動による選択時
+.button:hover { 
+  background-color: #fff;;
+  border-color: currentColor; 色だけ指定する
+  color: #e25c00; 
+} */
+
+.button--arrow-right {
+  position: relative;
+  padding-right: 2em;
+  padding-left: 1.38em;
+}
+/* .button--arrow-right {
+  position: relative;
+  padding-left: 1.38em; アイコン分内側の要素の右側を詰める
+  padding-right: 2em; 右側を詰めた分、違和感がないように左側も詰める
+} */
+
+.button--arrow-right::after {
+  content: '\f061';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: .83em;
+  font-family: 'FontAwesome';
+  font-weight: 900;
+}
+/* .button--arrow-right::after {
+  content: '\f061'; アイコンのunicodeを指定
+  position: absolute;
+  top: 50%; 親要素のTOP+50%の位置に配置
+  transform: translateY(-50%); 自分の高さの50%分TOP側に移動
+  right: .83em; 少なくとも親でパディングした1.38emより右側になるように配置(1.38em<)
+  font-family: 'FontAwesome';
+  font-weight: 900;
+} */
+
+.button--large {
+  width: 340px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font-size: 1.375rem;
+}
