@@ -1,0 +1,76 @@
+.main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container {
+  width: 300px;
+  padding: 50px;
+  text-align: center;
+  border: 1px solid black;
+}
+
+.icon-button {
+  position: relative;
+  display: inline-block;
+  /* フォントサイズ可変に対応しemで親要素のフォントサイズに合わせて可変 */
+  padding: .2em .3em;
+  border: 1px solid currentColor;
+  color: #e25c00;
+  text-decoration: none;
+  transition: .25s;
+}
+.icon-button:focus,
+.icon-button:hover {
+  background-color: #e25c00;
+  color: white;
+}
+.icon-button::before {
+  font-family: 'FontAwesome';
+  margin-right: .5em;
+}
+.icon-button--download::before {
+  content: '\f019';
+}
+.icon-button--zoom::before {
+  content: '\f00e';
+}
+
+.icon-text::before {
+  display: inline-block;
+  color: #e25c00;
+  margin-right: .3em;
+  font-family: 'FontAwesome';
+  font-weight: 400;
+}
+.icon-text--file::before {
+  content: '\f1c1';
+}
+.icon-text--zip::before {
+  content: '\f1c6';
+}
+
+.icon-text--arrow::before {
+  content: '';
+  width: .375em;
+  height: .375em;
+  border-bottom: .125em solid #e25c00;
+  border-left: .125em solid #e25c00;
+  transform: rotate(45deg) translateY(-30%);
+}
+
+.icon-text-right::after{
+  display: inline-block;
+  color: #e25c00;
+  margin-left: .3em;
+  font-family: 'FontAwesome';
+  font-weight: 400;
+}
+.icon-text--arrow-right::after{
+  content: '';
+  width: .375em;
+  height: .375em;
+  border-top: .125em solid #e25c00;
+  border-right: .125em solid #e25c00;
+  transform: rotate(45deg) translateY(-30%);
+}
