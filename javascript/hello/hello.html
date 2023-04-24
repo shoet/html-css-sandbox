@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/css-wipe@4.3.0/index.min.css"/>
+    <link rel="stylesheet" href="./style.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="./hello.js"></script>
+  </head>
+  <body>
+    <div class="hoge"></div>
+    <div id="hoge_id">hoge_id</div>
+    <h1 class="fuga" id="hoge">aaaa</h1>
+    <ul class="my_list">
+      <li class="list_element">a</li>
+      <li class="list_element">b</li>
+      <li class="list_element">c</li>
+      <li class="list_element">d</li>
+      <li class="list_element">e</li>
+    </ul>
+    <div class="my_tree">
+      <div class="deps_1">
+        <div class="deps_2">
+        </div>
+      </div>
+      <div class="deps_1">
+      </div>
+      <div class="deps_1">
+        <div class="deps_2">
+          <div class="deps_3">
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#" class="button">button_text</a>
+    <script>
+      let hoge = 'abc';
+      let fuga = '123';
+      e`こんにちは${hoge}さん。${fuga}さん。`;
+    </script>
+    <script>
+      'use strict';
+      var doc = document.getElementById('hoge_id');
+      var text = doc.textContent;
+      console.log(text);
+      let current = new Date();
+      doc.textContent = current.toLocaleDateString();
+    </script>
+    <script>
+      var doc = document.querySelector('#hoge.fuga');
+      var text = doc.textContent;
+      console.log(text);
+    </script>
+    <script>
+      var doc = document.querySelectorAll('.my_list .list_element');
+      for (let idx in doc) {
+        console.log(doc[idx].textContent);
+      }
+    </script>
+    <script>
+      var root = document.getElementsByClassName('my_tree')[0];
+      <!-- traverse(root); -->
+    </script>
+    <script>
+      var root = document.getElementsByClassName('my_tree')[0];
+      let child = root.firstElementChild;
+      while (child) {
+        console.log(child.className);
+        child = child.nextElementSibling;
+      }
+    </script>
+    <!-- <script>
+      var button = document.getElementsByClassName('button')[0];
+      button.addEventListener('click', (e) => {
+        console.log('event');
+      });
+    </script> -->
+    <script>
+      var button = document.querySelector('.button');
+      button.addEventListener('mouseenter', function() {
+        console.log('enter');
+        console.log(this);
+        <!-- button.textContent = 'fuga'; -->
+        this.textContent = 'fuga';
+      }, false);
+    </script>
+  </body>
+</html>
