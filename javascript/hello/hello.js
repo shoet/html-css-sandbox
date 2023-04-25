@@ -14,3 +14,22 @@ function traverse(node) {
         traverse(n);
     }
 }
+
+var errorToggle = false;
+function fetchTest() {
+    if (errorToggle) {
+        url = 'https://httpb.org/get';
+    } else {
+        url = 'https://httpbin.org/get';
+    }
+    fetch(url, {method: 'GET'})
+        .then(res => {
+            if (res.ok) {
+                return res.json();
+            }
+            throw new Error('error');
+        })
+        .then(data => console.log(data))
+        .catch(e => window.alert(e));
+    errorToggle = !errorToggle;
+}

@@ -7,3 +7,8 @@
   padding: 10px 20px;
   margin: 50px;
 }
+
+.button--large {
+  width: 250;
+  font-size: 1.20rem;
+}

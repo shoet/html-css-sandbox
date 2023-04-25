@@ -34,7 +34,9 @@
         </div>
       </div>
     </div>
-    <a href="#" class="button">button_text</a>
+    <a href="#" class="button">拡大縮小するボタン</a>
+    <a href="#" class="button request-get">GET</a>
+    <a href="./form.html" class="button">form</a>
     <script>
       let hoge = 'abc';
       let fuga = '123';
@@ -77,13 +79,26 @@
         console.log('event');
       });
     </script> -->
-    <script>
+    <!-- <script>
       var button = document.querySelector('.button');
       button.addEventListener('mouseenter', function() {
         console.log('enter');
         console.log(this);
-        <!-- button.textContent = 'fuga'; -->
         this.textContent = 'fuga';
+      }, false);
+    </script> -->
+    <script>
+      var button = document.querySelector('.button');
+      let toggleButtonLarge = function() {
+        this.classList.toggle('button--large');
+      };
+      button.addEventListener('mouseenter', toggleButtonLarge, false);
+      button.addEventListener('mouseleave', toggleButtonLarge, false);
+    </script>
+    <script>
+      document.querySelector('.request-get').addEventListener('click', function() {
+        console.log('click');
+        fetchTest();
       }, false);
     </script>
   </body>
